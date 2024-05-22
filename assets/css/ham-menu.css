@@ -1,0 +1,31 @@
+:root {
+    --ham-gap: 5px;
+    --bar-height: 5px;
+    --bar-width: 40px;
+    --ham-border-radius: 9999px;
+}
+
+.ham-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ham-gap);
+    display: none;
+}
+
+.ham-menu input,
+.ham-menu::before,
+.ham-menu::after {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--light-grey);
+    border-radius: var(--ham-border-radius);
+}
+
+.ham-menu input{
+    appearance: none;
+}
+
+aside {
+    display: none;
+}
